@@ -3,7 +3,7 @@
 <img align="right" alt="Coding" width="400" src="https://cdn.dribbble.com/users/1059583/screenshots/4171367/coding-freak.gif">
 
 <p align="left"> <img src="https://komarev.com/ghpvc/?username=mr-destroyer&label=Profile%20views&color=0e75b6&style=flat" alt="mr-destroyer" /> </p>
-<script src="https://tryhackme.com/badge/316387"></script>
+<img src="https://tryhackme-badges.s3.amazonaws.com/MohammadZim.png" alt="TryHackMe">
 
 <p align="left"> <a href="https://github.com/ryo-ma/github-profile-trophy"><img src="https://github-profile-trophy.vercel.app/?username=mr-destroyer" alt="mr-destroyer" /></a> </p>
 
