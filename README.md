@@ -10,9 +10,9 @@
 
 - 💬 Ask me about **anything you wanna know**
 
-- 📫 How to reach me **mohammadzim81@gmail.com**
+- 📫 How to reach me **istudy204@gmail.com**
 
-- ⚡ Fun fact **I think I'm funny [He he]**
+- ⚡ Fun fact **Spamming is not Hacking lil bro [He he]**
 
 <h3 align="left">Connect with me:</h3>
 <p align="left">
