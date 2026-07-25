@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 200" width="100%" height="200">
+  <rect width="900" height="200" fill="#0a0a0a"/>
+  <defs>
+    <style>
+      @keyframes fall1 { 0% { transform: translateY(-20px); opacity: 0; } 10% { opacity: 1; } 85% { opacity: 0.9; } 100% { transform: translateY(220px); opacity: 0; } }
+      @keyframes fall2 { 0% { transform: translateY(-40px); opacity: 0; } 8% { opacity: 0.8; } 88% { opacity: 0.8; } 100% { transform: translateY(220px); opacity: 0; } }
+      @keyframes fall3 { 0% { transform: translateY(-60px); opacity: 0; } 12% { opacity: 0.9; } 82% { opacity: 0.9; } 100% { transform: translateY(220px); opacity: 0; } }
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      .c1 { fill: #00ff41; font-family: monospace; font-size: 14px; }
+      .c2 { fill: #00cc33; font-family: monospace; font-size: 14px; }
+      .c3 { fill: #0088ff; font-family: monospace; font-size: 14px; }
+      .c4 { fill: #00ff41; font-family: monospace; font-size: 12px; opacity: 0.7; }
+      .bright { fill: #ccffcc; font-family: monospace; font-size: 14px; font-weight: bold; text-shadow: 0 0 8px #00ff41; }
+    </style>
+  </defs>
+  
+  <g>
+    <text class="c1" x="10"><animate attributeName="y" values="-20;220" dur="2.5s" repeatCount="indefinite"/>0</text>
+    <text class="c2" x="30"><animate attributeName="y" values="-40;220" dur="3.2s" repeatCount="indefinite"/>1</text>
+    <text class="c3" x="50"><animate attributeName="y" values="-60;220" dur="2.8s" repeatCount="indefinite"/>1</text>
+    <text class="c4" x="70"><animate attributeName="y" values="-30;220" dur="3.5s" repeatCount="indefinite"/>0</text>
+    <text class="bright" x="90"><animate attributeName="y" values="-50;220" dur="2.2s" repeatCount="indefinite"/>1</text>
+    <text class="c1" x="110"><animate attributeName="y" values="-25;220" dur="3.0s" repeatCount="indefinite"/>0</text>
+    <text class="c2" x="130"><animate attributeName="y" values="-45;220" dur="2.6s" repeatCount="indefinite"/>0</text>
+    <text class="c3" x="150"><animate attributeName="y" values="-65;220" dur="3.8s" repeatCount="indefinite"/>1</text>
+    <text class="c4" x="170"><animate attributeName="y" values="-35;220" dur="2.4s" repeatCount="indefinite"/>1</text>
+    <text class="bright" x="190"><animate attributeName="y" values="-55;220" dur="3.3s" repeatCount="indefinite"/>0</text>
+    <text class="c1" x="210"><animate attributeName="y" values="-15;220" dur="2.9s" repeatCount="indefinite"/>1</text>
+    <text class="c2" x="230"><animate attributeName="y" values="-38;220" dur="3.6s" repeatCount="indefinite"/>0</text>
+    <text class="c3" x="250"><animate attributeName="y" values="-58;220" dur="2.7s" repeatCount="indefinite"/>1</text>
+    <text class="c4" x="270"><animate attributeName="y" values="-28;220" dur="3.1s" repeatCount="indefinite"/>0</text>
+    <text class="bright" x="290"><animate attributeName="y" values="-48;220" dur="2.3s" repeatCount="indefinite"/>0</text>
+    <text class="c1" x="310"><animate attributeName="y" values="-68;220" dur="3.7s" repeatCount="indefinite"/>1</text>
+    <text class="c2" x="330"><animate attributeName="y" values="-22;220" dur="2.5s" repeatCount="indefinite"/>1</text>
+    <text class="c3" x="350"><animate attributeName="y" values="-42;220" dur="3.4s" repeatCount="indefinite"/>0</text>
+    <text class="c4" x="370"><animate attributeName="y" values="-62;220" dur="2.8s" repeatCount="indefinite"/>1</text>
+    <text class="bright" x="390"><animate attributeName="y" values="-32;220" dur="3.9s" repeatCount="indefinite"/>0</text>
+  </g>
+</svg>

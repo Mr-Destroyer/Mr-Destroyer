@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 150" width="100%" height="150">
+  <rect width="900" height="150" fill="#0a0a0a"/>
+  <defs>
+    <style>
+      @keyframes glitch1 {
+        0% { transform: translate(0); }
+        20% { transform: translate(-3px, 2px); }
+        40% { transform: translate(3px, -1px); }
+        60% { transform: translate(-2px, -2px); }
+        80% { transform: translate(2px, 1px); }
+        100% { transform: translate(0); }
+      }
+      @keyframes glitch2 {
+        0% { transform: translate(0); opacity: 0.7; }
+        25% { transform: translate(4px, -2px); opacity: 0.5; }
+        50% { transform: translate(-4px, 1px); opacity: 0.3; }
+        75% { transform: translate(2px, -1px); opacity: 0.6; }
+        100% { transform: translate(0); opacity: 0.7; }
+      }
+      @keyframes scanline {
+        0% { transform: translateY(-150px); }
+        100% { transform: translateY(300px); }
+      }
+      @keyframes flicker {
+        0%, 100% { opacity: 1; }
+        50% { opacity: 0.98; }
+        53% { opacity: 0.85; }
+        54% { opacity: 0.98; }
+        97% { opacity: 0.99; }
+        98% { opacity: 0.85; }
+        99% { opacity: 0.99; }
+      }
+      @keyframes glow {
+        0%, 100% { filter: drop-shadow(0 0 5px #00ff41); }
+        50% { filter: drop-shadow(0 0 20px #00ff41) drop-shadow(0 0 40px #00cc33); }
+      }
+      .glitch-text { font-family: monospace; font-size: 52px; font-weight: bold; fill: #00ff41; animation: glitch1 0.3s infinite, glow 2s ease-in-out infinite; }
+      .glitch-shadow1 { font-family: monospace; font-size: 52px; font-weight: bold; fill: #ff0040; animation: glitch2 0.15s infinite; }
+      .glitch-shadow2 { font-family: monospace; font-size: 52px; font-weight: bold; fill: #0088ff; animation: glitch2 0.2s infinite reverse; }
+      .subtitle { font-family: monospace; font-size: 18px; fill: #00cc33; opacity: 0.8; }
+      .scanline { fill: rgba(0, 255, 65, 0.03); width: 900px; height: 4px; animation: scanline 4s linear infinite; }
+      .container { animation: flicker 0.15s infinite; }
+      .border { fill: none; stroke: #00ff41; stroke-width: 1; opacity: 0.3; }
+    </style>
+  </defs>
+  
+  <g class="container">
+    <!-- Border frame -->
+    <rect class="border" x="5" y="5" width="890" height="140" rx="3"/>
+    
+    <!-- Scanline effect -->
+    <rect class="scanline"/>
+    
+    <!-- Glitch text layers -->
+    <text class="glitch-shadow1" x="450" y="65" text-anchor="middle">MR DESTROYER</text>
+    <text class="glitch-shadow2" x="450" y="65" text-anchor="middle">MR DESTROYER</text>
+    <text class="glitch-text" x="450" y="65" text-anchor="middle">MR DESTROYER</text>
+    
+    <!-- Subtitle -->
+    <text class="subtitle" x="450" y="95" text-anchor="middle">[ SYSTEM_OPERATOR // ZERO_DAY_ARCHITECT ]</text>
+    
+    <!-- Decorative elements -->
+    <text class="subtitle" x="15" y="20" style="font-size:10px; fill:#0088ff;">[SYS_INIT]</text>
+    <text class="subtitle" x="800" y="20" style="font-size:10px; fill:#0088ff;">v3.7.1</text>
+    <text class="subtitle" x="15" y="140" style="font-size:10px;">SECURE_CONNECTION :: ESTABLISHED</text>
+    <circle cx="12" cy="135" r="3" fill="#00ff41">
+      <animate attributeName="opacity" values="1;0;1" dur="1s" repeatCount="indefinite"/>
+    </circle>
+  </g>
+</svg>

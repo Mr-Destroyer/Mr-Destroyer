@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 520 620" width="100%" height="620">
+  <rect width="520" height="620" fill="#0d1117"/>
+  <defs>
+    <style>
+      @keyframes blink { 0%, 100% { opacity: 1; } 50% { opacity: 0; } }
+      @keyframes typeIn {
+        0% { clip-path: inset(0 100% 0 0); }
+        100% { clip-path: inset(0 0 0 0); }
+      }
+      @keyframes fadeIn { from { opacity: 0; } to { opacity: 1; } }
+      .term-window { fill: #0d1117; stroke: #00ff41; stroke-width: 1.5; rx: 6; }
+      .term-title { font-family: monospace; font-size: 12px; fill: #888888; }
+      .term-btn { fill: #ff5555; }
+      .term-btn2 { fill: #ffaa33; }
+      .term-btn3 { fill: #33cc33; }
+      .prompt { font-family: monospace; font-size: 13px; fill: #00ff41; }
+      .command { font-family: monospace; font-size: 13px; fill: #cccccc; }
+      .output { font-family: monospace; font-size: 13px; fill: #00cc33; }
+      .highlight { font-family: monospace; font-size: 13px; fill: #0088ff; }
+      .warning { font-family: monospace; font-size: 13px; fill: #ffaa33; }
+      .typing { overflow: hidden; white-space: nowrap; animation: typeIn 2s steps(40) forwards; }
+      .fade-in { animation: fadeIn 0.5s ease-in forwards; }
+    </style>
+  </defs>
+  
+  <!-- Terminal window -->
+  <rect class="term-window" x="10" y="10" width="500" height="600"/>
+  
+  <!-- Title bar -->
+  <rect x="10" y="10" width="500" height="28" fill="#1a1a2e" rx="6"/>
+  <rect x="10" y="22" width="500" height="16" fill="#1a1a2e"/>
+  
+  <!-- Window buttons -->
+  <circle class="term-btn" cx="28" cy="24" r="5"/>
+  <circle class="term-btn2" cx="44" cy="24" r="5"/>
+  <circle class="term-btn3" cx="60" cy="24" r="5"/>
+  
+  <text class="term-title" x="250" y="28" text-anchor="middle">root@mr-destroyer:~/terminal</text>
+  
+  <!-- Terminal content -->
+  <text class="prompt" x="20" y="60">root@mr-destroyer:~$</text>
+  <text class="command" x="155" y="60">cat system_info.log</text>
+  
+  <text class="output" x="20" y="80">[SYSTEM] Loading profile...</text>
+  <text class="output" x="20" y="96">[SYSTEM] Analyzing user: Mr_Destroyer</text>
+  <text class="output" x="20" y="112">[SYSTEM] Threat Level: ██████████ 100%</text>
+  
+  <text class="prompt" x="20" y="140">root@mr-destroyer:~$</text>
+  <text class="command" x="155" y="140">./deploy_stats.sh</text>
+  
+  <text class="output" x="20" y="160">[INFO] Fetching GitHub metrics...</text>
+  <text class="output" x="20" y="176">[INFO] Calculating threat score...</text>
+  <text class="output" x="20" y="192">[COMPLETE] Stats deployed.</text>
+  
+  <text class="prompt" x="20" y="220">root@mr-destroyer:~$</text>
+  <text class="command" x="155" y="220">show_network</text>
+  
+  <text class="output" x="20" y="240">CONNECTING...</text>
+  <text class="highlight" x="20" y="258">  ► Facebook   : MrDestroyer (ACTIVE)</text>
+  <text class="highlight" x="20" y="274">  ► YouTube    : Study_Hard69 (ACTIVE)</text>
+  <text class="highlight" x="20" y="290">  ► Email      : istudy204@gmail.com</text>
+  <text class="output" x="20" y="310">  ► Signal     : ENCRYPTED</text>
+  
+  <text class="prompt" x="20" y="340">root@mr-destroyer:~$</text>
+  <text class="command" x="155" y="340">check_vulnerabilities</text>
+  
+  <text class="output" x="20" y="360">[SCAN] Identifying attack vectors...</text>
+  <text class="warning" x="20" y="378">  ► Port 22:  OPEN (SSH running)</text>
+  <text class="warning" x="20" y="394">  ► Port 80:  OPEN (HTTP active)</text>
+  <text class="warning" x="20" y="410">  ► Port 443: OPEN (HTTPS secure)</text>
+  <text class="output" x="20" y="428">[INFO] 0 critical vulnerabilities found</text>
+  
+  <text class="prompt" x="20" y="458">root@mr-destroyer:~$</text>
+  <text class="command" x="155" y="458">whoami</text>
+  
+  <text class="highlight" x="20" y="478">  ► User     : Mr_Destroyer</text>
+  <text class="highlight" x="20" y="494">  ► Role     : System_Operator</text>
+  <text class="highlight" x="20" y="510">  ► Status   : UNSTOPPABLE</text>
+  
+  <text class="prompt" x="20" y="540">root@mr-destroyer:~$</text>
+  <text class="command" x="155" y="540">Fun fact: </text>
+  <text class="output" x="20" y="558">Spamming is not Hacking lil bro [He he]</text>
+  
+  <!-- Blinking cursor -->
+  <text class="prompt" x="20" y="585" style="animation: blink 1s step-end infinite;">_</text>
+</svg>
