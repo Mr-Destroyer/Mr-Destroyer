@@ -1,0 +1,6 @@
+# API response cache written by scripts/github_api.py. Local only — it holds
+# last-good values used when the GitHub API rate-limits, and is never committed.
+.cache/
+
+__pycache__/
+*.pyc

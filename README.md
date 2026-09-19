@@ -1,284 +1,142 @@
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▀░█▀█░█▀█░█▀▀░█▀▄░█▀▀░█▀█░▀█▀░█░█░█▀▀  ░█▀▀░█▀█░█▀▀░█▀▀░█▀▄░█▀▄
-  ░█▀▀░█░█░█▀▀░█▀▀░█░█░█▀▀░█░█░░█░░█░█░▀▀█  ░█░█░█░█░█░█░█▀▀░█░█░█░█
-  ░▀░░░▀▀▀░▀░░░▀▀▀░▀▀░░▀▀▀░▀▀▀░░▀░░▀▀▀░▀▀▀  ░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀░░▀▀░
-  ╔══════════════════════════════════════════════════════════════════════╗
-  ║  MR DESTROYER  ║  SYSTEM_OPERATOR  ║  ZERO_DAY_ARCHITECT          ║
-  ╚══════════════════════════════════════════════════════════════════════╝
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
 <div align="center">
 
-<!-- Matrix Rain Background Banner -->
-<img src="https://raw.githubusercontent.com/Mr-Destroyer/Mr-Destroyer/main/assets/matrix-rain.svg" width="100%" height="auto" alt="matrix-rain"/>
-
-<!-- Glitch Header Banner -->
-<img src="https://raw.githubusercontent.com/Mr-Destroyer/Mr-Destroyer/main/assets/glitch-banner.svg" width="100%" height="auto" alt="mr-destroyer"/>
-
-<br><br>
-
-<!-- Typing Effect -->
-<a href="https://git.io/typing-svg">
-  <img src="https://readme-typing-svg.demolab.com?font=Fira+Code&weight=600&size=22&duration=3000&pause=500&color=00FF41&center=true&vCenter=true&multiline=true&repeat=true&width=900&height=80&lines=Every+digital+footprint+tells+a+story.;I+just+know+where+to+look...;ACCESS+GRANTED+%3A%3A+WELCOME+TO+THE+DOJO" alt="Typing SVG"/>
-</a>
-
-<br><br>
-
-<!-- System Status Badges -->
-<p>
-  <img src="https://komarev.com/ghpvc/?username=mr-destroyer&label=INTRUSIONS&color=00ff41&style=for-the-badge" alt="Profile Views"/>
-  <img src="https://img.shields.io/badge/STATUS-ACTIVE-00ff41?style=for-the-badge&logo=github&logoColor=white&labelColor=0d1117" alt="Status"/>
-  <img src="https://img.shields.io/badge/THREAT-LEVEL_MAX-00ff41?style=for-the-badge&labelColor=0d1117" alt="Threat Level"/>
-  <img src="https://img.shields.io/badge/SECURITY-CLASSIFIED-ff0000?style=for-the-badge&labelColor=0d1117" alt="Security"/>
-</p>
+<img src="assets/hero.svg" alt="Mohammad Zim — offensive security tooling" width="100%">
 
 <br>
 
-<!-- TryHackMe Badge -->
-<a href="https://tryhackme.com/p/MohammadZim">
-  <img src="https://tryhackme-badges.s3.amazonaws.com/MohammadZim.png" alt="TryHackMe Badge"/>
-</a>
-
-<br><br>
-
-<!-- Trophy Case -->
-<details>
-  <summary><code>&gt; ./display_trophies.sh</code></summary>
-  <br>
-  <a href="https://github.com/ryo-ma/github-profile-trophy">
-    <img src="https://github-profile-trophy.vercel.app/?username=mr-destroyer&theme=matrix&no-frame=true&no-bg=true&column=7&margin-w=15&margin-h=15" alt="Trophy Case"/>
-  </a>
-</details>
+<a href="https://tryhackme.com/p/MohammadZim"><img src="https://tryhackme-badges.s3.amazonaws.com/MohammadZim.png" alt="TryHackMe" height="32"></a>
+&nbsp;
+<img src="https://komarev.com/ghpvc/?username=mr-destroyer&label=VISITORS&color=00E5A0&style=for-the-badge" alt="visitors" height="28">
 
 </div>
 
-<hr>
-
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▄░█▀█░█▀▀░█▀▀░█▀▄░█▀▀░█▀█░█▀▀  ░█▀▄░█▀█░█▀▀░█▀▀░█░█░█▀▀░█▀▄
-  ░█░█░█░█░█░█░█▀▀░█▀▄░█▀▀░█░█░▀▀█  ░█░█░█░█░▀▀█░█▀▀░█░█░█▀▀░█░█
-  ░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀  ░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
-## 🖥️ SYSTEM_TERMINAL
-
-<img src="https://raw.githubusercontent.com/Mr-Destroyer/Mr-Destroyer/main/assets/terminal-stats.svg" width="520" alt="Terminal Interface"/>
-
-<br><br>
-
-<hr>
-
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▄░█▀▀░█▀▀░█▀▄░█▀▀░█▀▄░█░█░█▀▄░█▀▀░█▀█░█▀▀  ░█▀▄░█▀▀░█▀▀░█▀▄░█▀▀
-  ░█░█░█▀▀░█░█░█░█░█▀▀░█░█░█░█░█░█░█▀▀░█░█░▀▀█  ░█░█░█░█░█▀▀░█░█░█▀▀
-  ░▀▀░░▀▀▀░▀▀▀░▀▀░░▀▀▀░▀▀░░▀▀▀░▀▀░░▀▀▀░▀▀▀░▀▀▀  ░▀▀░░▀▀▀░▀▀▀░▀▀░░▀▀▀
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
-## 🔧 TOOL ARSENAL
-
-<img src="https://raw.githubusercontent.com/Mr-Destroyer/Mr-Destroyer/main/assets/skill-bars.svg" width="100%" height="auto" alt="Skills Matrix"/>
-
 <br>
 
+<img src="assets/divider.svg" width="100%" alt="">
+
+## Selected work
+
+<img src="assets/projects.svg" width="100%" alt="Featured repositories">
+
 <details>
-  <summary><code>&gt; ./list_tools.sh --verbose</code></summary>
-  <br>
-  <table>
-    <tr>
-      <td align="center" width="100"><strong>BASH</strong><br><img src="https://www.vectorlogo.zone/logos/gnu_bash/gnu_bash-icon.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>C</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/c/c-original.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>CSS3</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/css3/css3-original-wordmark.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>GIT</strong><br><img src="https://www.vectorlogo.zone/logos/git-scm/git-scm-icon.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>HTML5</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/html5/html5-original-wordmark.svg" width="50" height="50"/></td>
-    </tr>
-    <tr>
-      <td align="center" width="100"><strong>JS</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/javascript/javascript-original.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>LINUX</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/linux/linux-original.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>NODE</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/nodejs/nodejs-original-wordmark.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>PYTHON</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/python/python-original.svg" width="50" height="50"/></td>
-      <td align="center" width="100"><strong>DOCKER</strong><br><img src="https://raw.githubusercontent.com/devicons/devicon/master/icons/docker/docker-original.svg" width="50" height="50"/></td>
-    </tr>
-  </table>
+<summary><b>All 42 repositories</b></summary>
+<br>
+
+**Offensive tooling**
+
+| | Repository | What it does |
+|---|---|---|
+| 12★ | **[endpointhunter](https://github.com/Mr-Destroyer/endpointhunter)** | Bug-bounty endpoint discovery |
+| 12★ | **[villain](https://github.com/Mr-Destroyer/villain)** | Undetectable payload/shell generator |
+| 10★ | **[CredStalker-](https://github.com/Mr-Destroyer/CredStalker-)** | Automated credential hunting |
+| 9★ | **[vulnx](https://github.com/Mr-Destroyer/vulnx)** | Auto vulnerability finder + shell injector |
+| 6★ | **[Fucker](https://github.com/Mr-Destroyer/Fucker)** | Web application vulnerability scanner |
+| 3★ | **[WPGhost](https://github.com/Mr-Destroyer/WPGhost)** | WordPress scanner/exploiter |
+| 2★ | **[ALL_IN_ONE](https://github.com/Mr-Destroyer/ALL_IN_ONE)** | Multi-tool launcher |
+| 2★ | **[EmailSpoofer](https://github.com/Mr-Destroyer/EmailSpoofer)** | SMTP spoofing |
+| 1★ | **[SQLZ](https://github.com/Mr-Destroyer/SQLZ)** | SQL injection toolkit |
+| 1★ | **[HashDog](https://github.com/Mr-Destroyer/HashDog)** | Hash cracking |
+| 1★ | **[DIONAEA_FTP_SCANNER](https://github.com/Mr-Destroyer/DIONAEA_FTP_SCANNER)** | Honeypot FTP testing |
+| 1★ | **[God_Scanner](https://github.com/Mr-Destroyer/God_Scanner)** | Scanner |
+| 0★ | **[ZimPwn](https://github.com/Mr-Destroyer/ZimPwn)** | LFI/RFI scanner |
+| 0★ | **[JWT-MODIFY](https://github.com/Mr-Destroyer/JWT-MODIFY)** | JWT payload tampering |
+| 0★ | **[sessionexploit](https://github.com/Mr-Destroyer/sessionexploit)** | Cookie/session decoding |
+| 0★ | **[XSStriker](https://github.com/Mr-Destroyer/XSStriker)** | XSS testing |
+| 0★ | **[CVE-2025-55182](https://github.com/Mr-Destroyer/CVE-2025-55182)** | PoC for the RCE/command-injection CVE |
+| 0★ | **[Admin-Finder](https://github.com/Mr-Destroyer/Admin-Finder)** | Admin panel discovery (Perl) |
+| 0★ | **[ZForce](https://github.com/Mr-Destroyer/ZForce)** | Social-media brute force |
+| 0★ | **[wifi_hacker](https://github.com/Mr-Destroyer/wifi_hacker)** | Wi-Fi auditing (Windows) |
+
+**Utilities & platform**
+
+| | Repository | What it does |
+|---|---|---|
+| 2★ | **[MobiToolKit](https://github.com/Mr-Destroyer/MobiToolKit)** | Android device tooling |
+| 2★ | **[Keylogger](https://github.com/Mr-Destroyer/Keylogger)** | C++ keylogger |
+| 2★ | **[ufonet](https://github.com/Mr-Destroyer/ufonet)** | DoS tooling |
+| 1★ | **[ZimMux](https://github.com/Mr-Destroyer/ZimMux)** | One-file tmux theme |
+| 1★ | **[ZIMTHEGOAT](https://github.com/Mr-Destroyer/ZIMTHEGOAT)** | HyDE desktop theme |
+| 0★ | **[git-dumper](https://github.com/Mr-Destroyer/git-dumper)** | Fast `.git` dumper (Go) |
+| 0★ | **[Jarvis_Zim](https://github.com/Mr-Destroyer/Jarvis_Zim)** | Text-to-speech assistant |
+| 0★ | **[DigitalSparkUsbController](https://github.com/Mr-Destroyer/DigitalSparkUsbController)** | USB Rubber Ducky scripts |
+| 0★ | **[PageKite](https://github.com/Mr-Destroyer/PageKite)** | Reverse proxy for exposing local servers |
+
+**Write-ups & coursework**
+
+| Repository | Topic |
+|---|---|
+| **[0x41haz-writeup](https://github.com/Mr-Destroyer/0x41haz-writeup)** | Reverse-engineering walkthrough |
+| **[XXE-INJECTION](https://github.com/Mr-Destroyer/XXE-INJECTION)** | XXE walkthrough (BugForge) |
+| **[phantom-fob-tryhackme](https://github.com/Mr-Destroyer/phantom-fob-tryhackme)** | TryHackMe room walkthrough |
+| **[justavpnlogin](https://github.com/Mr-Destroyer/justavpnlogin)** | TryHackMe room walkthrough |
+| **[cybersecurity_course](https://github.com/Mr-Destroyer/cybersecurity_course)** | Beginner security course |
+| **[course_manual](https://github.com/Mr-Destroyer/course_manual)** | Course material |
+
+**Web & misc**
+
+| Repository | What it is |
+|---|---|
+| **[ZimShell](https://github.com/Mr-Destroyer/ZimShell)** | Portfolio site |
+| **[portfolio](https://github.com/Mr-Destroyer/portfolio)** | Portfolio site |
+| **[DarkWeb](https://github.com/Mr-Destroyer/DarkWeb)** | HTML/CSS/JS demo page |
+| **[CALCULATOR](https://github.com/Mr-Destroyer/CALCULATOR)** | Python calculator |
+| **[Ransomware](https://github.com/Mr-Destroyer/Ransomware)** | Ransomware simulation |
+| **[DDos_Zim](https://github.com/Mr-Destroyer/DDos_Zim)** | DoS tooling |
+| **[FB-Hack](https://github.com/Mr-Destroyer/FB-Hack)** | Facebook tooling |
+
+<sub>Repos with a zero star count are still listed — the count is a popularity signal, not a quality one, and this list is meant to be complete.</sub>
+
 </details>
 
 <br>
 
-<hr>
+<img src="assets/divider.svg" width="100%" alt="">
 
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▄░█▀▀░█▀▄░█▀▀░█▀▄░█░█░█▀▀░█▀▄░█  ░█▀▄░█▀▀░█▀▀░█▀▀░█▀▀░█░█░█▀▀
-  ░█░█░█▀▀░█▀▄░█▀▀░█░█░█░█░█▀▀░█░█░█  ░█░█░█░█░█░█░█▀▀░▀▀█░█░█░█▀▀
-  ░▀▀░░▀▀▀░▀░▀░▀▀▀░▀▀░░▀▀▀░▀▀▀░▀▀░░▀  ░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
+## Numbers
 
-## 🌐 NETWORK_NODES
+<img src="assets/stats.svg" width="100%" alt="GitHub metrics">
 
-<table>
-  <tr>
-    <td align="center" width="200">
-      <a href="https://facebook.com/zimthegoat" target="_blank">
-        <img src="https://img.shields.io/badge/FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=0d1117&color=00ff41" alt="facebook"/>
-        <br>
-        <sub><b>//zimthegoat</b></sub>
-      </a>
-    </td>
-    <td align="center" width="200">
-      <a href="https://www.youtube.com/@Study_Hard69" target="_blank">
-        <img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=0d1117&color=00ff41" alt="youtube"/>
-        <br>
-        <sub><b>//Study_Hard69</b></sub>
-      </a>
-    </td>
-    <td align="center" width="200">
-      <a href="mailto:istudy204@gmail.com">
-        <img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0d1117&color=00ff41" alt="email"/>
-        <br>
-        <sub><b>//istudy204</b></sub>
-      </a>
-    </td>
-  </tr>
-</table>
+<img src="assets/languages.svg" width="100%" alt="Primary languages by repository count">
+
+<sub>Languages are counted **by repository**, not by bytes. Byte counts are misleading here: one vendored 15 MB JavaScript tool outweighs every line of Python in the account, which would put JavaScript first. Counting repos answers the more useful question — what does this person actually build?</sub>
+
+<img src="assets/snake.svg" width="100%" alt="Contribution history">
 
 <br>
 
-<details>
-  <summary><code>&gt; decrypt_communications --secure</code></summary>
-  <br>
-  
-```ascii
-  ╔══════════════════════════════════╗
-  ║    ENCRYPTED_CONTACT_CHANNEL     ║
-  ╠══════════════════════════════════╣
-  ║  PGP Key: 0xDEADBEEF            ║
-  ║  Signal:  [REDACTED]             ║
-  ║  Matrix:  @mr_destroyer:matrix   ║
-  ║  Discord: mr_destroyer#6969      ║
-  ╚══════════════════════════════════╝
-  ```
-  
-  <b>► Secure Channel Established ◄</b>
-</details>
+<img src="assets/divider.svg" width="100%" alt="">
+
+## Terminal
+
+<img src="assets/terminal.svg" width="420" alt="whoami">
 
 <br>
 
-<hr>
-
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▀░█▀▄░█▀█░█▀▀░█▀█░█▀▀░█░█░█▀▀░█▀▀░█▀▄  ░█▀▀░█▀█░█▀▀░█▀▀░█▀▀
-  ░█░█░█░█░█░█░█▀▀░█░█░▀▀█░█░█░█▀▀░█▀▀░█░█  ░█▀▀░█░█░█░█░▀▀█░▀▀█
-  ░▀▀▀░▀▀░░▀░▀░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░  ░▀▀▀░▀░▀░▀▀▀░▀▀▀░▀▀▀
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
-## 📊 MISSION_STATS
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=mr-destroyer&show_icons=true&locale=en&theme=radical&bg_color=0d1117&title_color=00ff41&icon_color=00ff41&text_color=00cc33&border_color=00ff41&border_radius=10&hide_border=false&custom_title=MISSION_STATS" alt="GitHub Stats" width="48%"/>
-  &nbsp;
-  <img src="https://github-readme-streak-stats.herokuapp.com/?user=mr-destroyer&theme=black-ice&stroke=00ff41&ring=00ff41&fire=00ff41&currStreakNum=00ff41&sideNums=00ff41&currStreakLabel=00ff41&sideLabels=00cc33&dates=0088ff&background=0d1117&border=00ff41&border_radius=10" alt="GitHub Streak" width="48%"/>
-</p>
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api/top-langs?username=mr-destroyer&show_icons=true&locale=en&layout=compact&theme=radical&bg_color=0d1117&title_color=00ff41&text_color=00cc33&border_color=00ff41&border_radius=10&hide_border=false" alt="Top Languages" width="48%"/>
-</p>
-
-<br>
-
-<hr>
-
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▄░█▀█░█▀▄░█▀▀░█▀▀░█▀▀░█░█░█▀▄░█▀▀░█░█░▀█▀  ░█▀▀░█▀▄░█░█░█
-  ░█░█░█░█░█░█░█░█░█▀▀░█▀▀░▀▄▀░█░█░█▀▀░█░█░░█░  ░█▀▀░█░█░█▄█░█
-  ░▀▀░░▀▀▀░▀▀░░▀▀▀░▀▀▀░▀▀▀░░▀░░▀▀░░▀▀▀░▀▀▀░░▀░  ░▀▀▀░▀▀░░▀░▀░▀
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
-## 🐍 CONTRIBUTION_GRID
-
-<picture>
-  <source media="(prefers-color-scheme: dark)" srcset="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
-  <source media="(prefers-color-scheme: light)" srcset="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake.svg" />
-  <img alt="github-snake" src="https://raw.githubusercontent.com/Platane/snk/output/github-contribution-grid-snake-dark.svg" />
-</picture>
-
-<br>
-
-<a href="https://github.com/ashutosh00710/github-readme-activity-graph">
-  <img src="https://github-readme-activity-graph.vercel.app/graph?username=mr-destroyer&bg_color=0d1117&color=00ff41&line=00ff41&point=ffffff&area=true&area_color=00ff41&hide_border=true&custom_title=MISSION_LOG_ACTIVITY" width="100%" alt="Activity Graph"/>
-</a>
-
-<br>
-
-<hr>
-
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▄░█░█░█▀▀░█░░░█░░░█▀▀░▀█▀░█▀█░█░█  ░█▀▄░█░█░█▀▀░█▀▄░█░█░█▀▀
-  ░█░█░█░█░▀▀█░█░░░█░░░█▀▀░░█░░█░█░█░█  ░█░█░█░█░▀▀█░█░█░█░█░█▀▀
-  ░▀▀░░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀▀░░▀░░▀▀▀░▀▀▀  ░▀▀░░▀▀▀░▀▀▀░▀▀░░▀▀▀░▀▀▀
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
-## 🎯 DOJO_RULES
-
-<table>
-  <tr>
-    <td align="center" width="250">
-      <code>👯</code>
-      <br>
-      <b>COLLABORATION</b>
-      <br>
-      <sub>Open to everyone</sub>
-    </td>
-    <td align="center" width="250">
-      <code>💬</code>
-      <br>
-      <b>KNOWLEDGE</b>
-      <br>
-      <sub>Ask me anything</sub>
-    </td>
-    <td align="center" width="250">
-      <code>⚡</code>
-      <br>
-      <b>TRUTH</b>
-      <br>
-      <sub>Spamming is not Hacking lil bro [He he]</sub>
-    </td>
-  </tr>
-</table>
-
-<br>
-
-<hr>
-
-<!--━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━
-  ░█▀▀░█▀▀░█▀▀░█▀▀░█▀▄░█▀▄░█▀▀░█░█░▀█▀░█▀▀░█▀▄
-  ░█░█░█▀▀░█░█░█▀▀░█▀▄░█░█░█▀▀░█░█░░█░░█▀▀░█░█
-  ░▀▀▀░▀▀▀░▀▀▀░▀▀▀░▀▀░░▀▀░░▀▀▀░▀▀▀░░▀░░▀▀▀░▀▀░
-  ─━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━━-->
-
-```ascii
-  ╔═══════════════════════════════════════════════════╗
-  ║     ███████╗██╗   ██╗███████╗██████╗ ██╗   ██╗   ║
-  ║     ██╔════╝╚██╗ ██╔╝██╔════╝██╔══██╗╚██╗ ██╔╝   ║
-  ║     █████╗   ╚████╔╝ █████╗  ██████╔╝ ╚████╔╝    ║
-  ║     ██╔══╝    ╚██╔╝  ██╔══╝  ██╔══██╗  ╚██╔╝     ║
-  ║     ██║        ██║   ███████╗██║  ██║   ██║      ║
-  ║     ╚═╝        ╚═╝   ╚══════╝╚═╝  ╚═╝   ╚═╝      ║
-  ║                                                      ║
-  ║        "Every system has a weakness.                ║
-  ║         Some are just better hidden."               ║
-  ║                                                      ║
-  ║     🔒 SYSTEM SECURE :: CONNECTION TERMINATED       ║
-  ╚═══════════════════════════════════════════════════╝
-```
+<img src="assets/divider.svg" width="100%" alt="">
 
 <div align="center">
 
-<p>
-  <img src="https://img.shields.io/badge/MADE_WITH-☕_&_🔥-00ff41?style=for-the-badge&labelColor=0d1117" alt="Made With"/>
-  <img src="https://img.shields.io/badge/LAST_SEEN-JUST_NOW-00ff41?style=for-the-badge&labelColor=0d1117" alt="Last Seen"/>
-  <img src="https://img.shields.io/badge/SYSTEM-UNBREAKABLE-00ff41?style=for-the-badge&labelColor=0d1117" alt="System Status"/>
-</p>
+### Contact
+
+<a href="mailto:istudy204@gmail.com"><img src="https://img.shields.io/badge/EMAIL-D14836?style=for-the-badge&logo=gmail&logoColor=white&labelColor=0B0F10" alt="Email"></a>
+<a href="https://facebook.com/zimthegoat"><img src="https://img.shields.io/badge/FACEBOOK-1877F2?style=for-the-badge&logo=facebook&logoColor=white&labelColor=0B0F10" alt="Facebook"></a>
+<a href="https://www.youtube.com/@Study_Hard69"><img src="https://img.shields.io/badge/YOUTUBE-FF0000?style=for-the-badge&logo=youtube&logoColor=white&labelColor=0B0F10" alt="YouTube"></a>
+
+<br><br>
+
+Open to everyone — questions, collaborations, or just talking shop.
+
+<sub>Spamming is not Hacking lil bro [He he]</sub>
+
+<br><br>
+
+<i>"Every system has a weakness.<br>
+You just have to find it."</i>
+
+</div>
+
+<br>
 
 ---
 
-<sub>Keep your friends close, but your enemies closer. — Rootkit probably</sub>
-
-</div>
+<sub><b>How this page works.</b> Every figure above is computed from the live GitHub API and committed daily by <a href=".github/workflows/profile.yml">a scheduled Action</a> — nothing here is hand-typed, so it cannot drift out of date. The assets are generated by the Python in <a href="scripts/">scripts/</a>. They are self-hosted rather than embedded from third-party badge services, which is why they keep working when those services go down.</sub>

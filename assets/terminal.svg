@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  terminal.svg — the whoami card.
+
+  Replaces terminal-stats.svg. Two things were wrong with that one and both are
+  fixed here:
+
+  1. It was 520x620 with a hardcoded `height="620"` attribute. GitHub renders
+     content narrower than the viewBox on mobile, and a fixed height then crops
+     or letterboxes. This card has no height attribute at all — the viewBox
+     drives the aspect ratio at every width.
+  2. It claimed things that were not true (a fake PGP key, a dead Discord
+     discriminator, an invented "0 critical vulnerabilities found"). Everything
+     below is either a verified fact or is visibly labelled as illustrative.
+
+  The typewriter is a SMIL clipPath width animation — the probe showed the CSS
+  `clip-path: inset()` equivalent renders nothing under this CSP.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 560 300" width="100%" role="img" aria-label="Terminal card">
+  <defs>
+    <style>
+      text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      /* Base states are the RESTING state — visible. The hidden start state and
+         the animation itself live in the media query below. `opacity: 0` as a
+         base state would leave this whole card blank wherever animations do not
+         run, which is the difference between "no animation" and "no content". */
+      @keyframes riseIn { from { opacity: 0; } to { opacity: 1; } }
+      @keyframes caret { 0%,49% { opacity: 1; } 50%,100% { opacity: 0; } }
+      @media (prefers-reduced-motion: no-preference) {
+        .rise { opacity: 0; animation: riseIn .6s cubic-bezier(.2,.7,.3,1) forwards; }
+        .caret { animation: caret 1.1s steps(1) infinite; }
+      }
+    </style>
+    <!-- The rect's RESTING width is the full 160, and the SMIL animation runs
+         from 0 up to it. The inverse — resting at width 0 with SMIL growing it —
+         clips the typed command to nothing forever if SMIL does not run, and
+         SMIL is exactly the thing most likely not to run. -->
+    <clipPath id="typeLine">
+      <rect x="24" y="57" width="160" height="20">
+        <animate attributeName="width" from="0" to="160" dur="1.6s" begin="0.4s" fill="freeze"/>
+      </rect>
+    </clipPath>
+    <linearGradient id="bar" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#0A6B4E"/>
+      <stop offset="100%" stop-color="#00E5A0"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="560" height="300" fill="#0B0F10"/>
+
+  <!-- window -->
+  <rect x="8" y="8" width="544" height="284" rx="7" fill="#11171A" stroke="#1E2A2E"/>
+  <rect x="8" y="8" width="544" height="30" rx="7" fill="#161D20"/>
+  <rect x="8" y="28" width="544" height="10" fill="#161D20"/>
+  <circle cx="26" cy="23" r="4.5" fill="#2A3A3E"/>
+  <circle cx="42" cy="23" r="4.5" fill="#2A3A3E"/>
+  <circle cx="58" cy="23" r="4.5" fill="#2A3A3E"/>
+  <text x="280" y="27" font-size="10.5" fill="#8B949E" text-anchor="middle">zim@localhost — whoami</text>
+
+  <!-- prompt + typed command -->
+  <text class="rise" style="animation-delay:.2s" x="24" y="68" font-size="12.5" fill="#00E5A0">&#8250;</text>
+  <g clip-path="url(#typeLine)">
+    <text x="40" y="68" font-size="12.5" fill="#E6EDF3">whoami --verbose</text>
+  </g>
+  <rect class="caret" x="178" y="57" width="7" height="14" fill="#00E5A0"/>
+
+  <!-- real values from the GitHub API -->
+  <g class="rise" style="animation-delay:1.1s">
+    <text x="24" y="100" font-size="12" fill="#8B949E">name</text>
+    <text x="140" y="100" font-size="12" fill="#E6EDF3">Mohammad Zim</text>
+
+    <text x="24" y="122" font-size="12" fill="#8B949E">focus</text>
+    <text x="140" y="122" font-size="12" fill="#E6EDF3">offensive security tooling</text>
+
+    <text x="24" y="144" font-size="12" fill="#8B949E">stack</text>
+    <text x="140" y="144" font-size="12" fill="#E6EDF3">Python &#183; Shell &#183; C++ &#183; Go</text>
+
+    <text x="24" y="166" font-size="12" fill="#8B949E">links</text>
+    <text x="140" y="166" font-size="12" fill="#00E5A0">github.com/Mr-Destroyer</text>
+  </g>
+
+  <!-- illustrative block, explicitly labelled so it is not read as a claim -->
+  <g class="rise" style="animation-delay:1.4s">
+    <line x1="24" y1="188" x2="536" y2="188" stroke="#1E2A2E"/>
+    <text x="24" y="210" font-size="11" fill="#8B949E">&#8250; ./scan.sh --target demo.local</text>
+    <text x="24" y="230" font-size="11" fill="#0A6B4E">[ ok ]   reconnaissance complete</text>
+    <text x="24" y="248" font-size="11" fill="#0A6B4E">[ ok ]   attack surface mapped</text>
+    <text x="24" y="266" font-size="11" fill="#0A6B4E">[ ok ]   report generated</text>
+    <text x="536" y="266" font-size="9" fill="#2A3A3E" text-anchor="end">illustrative</text>
+  </g>
+</svg>

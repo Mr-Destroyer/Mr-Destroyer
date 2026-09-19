@@ -1,0 +1,136 @@
+name: Regenerate profile assets
+
+# Regenerates the four data-driven SVGs from the live GitHub API and commits
+# them back to main, which is the only way raw.githubusercontent.com will serve
+# them. This exists because three of the widgets the profile used to embed died
+# upstream (503/402) and one was silently showing someone else's contribution
+# graph — self-hosting is what makes the page unable to break that way.
+
+on:
+  schedule:
+    # 04:17 rather than 04:00 — GitHub's scheduler is heavily loaded on the hour
+    # and delays runs at peak times.
+    - cron: "17 4 * * *"
+  workflow_dispatch:
+  push:
+    branches: [main]
+    # Scoped to the generator itself. Combined with the fact that commits made
+    # with the default GITHUB_TOKEN do not re-trigger workflows, this makes a
+    # regeneration loop impossible: an assets-only commit cannot re-enter here.
+    paths:
+      - "scripts/**"
+      - ".github/workflows/profile.yml"
+
+permissions:
+  contents: write # required to commit the regenerated assets
+
+# A scheduled run and a manual dispatch must not race on the same commit.
+# Queue them instead of cancelling: the second run simply regenerates on top of
+# the first, and cancelling mid-write could leave a half-written asset.
+concurrency:
+  group: profile-assets
+  cancel-in-progress: false
+
+jobs:
+  generate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      # No pip install: the generator is stdlib-only on purpose, so there is no
+      # dependency to break and nothing to cache.
+
+      # `.cache/` is gitignored, so without this the last-good fallback in
+      # github_api.collect() is dead code in the one environment that needs it:
+      # every run starts with an empty cache, so a failed API call substitutes
+      # an empty default instead of yesterday's numbers. Restoring it here is
+      # what makes "keep last-good output" actually true in CI.
+      - name: Restore last-good API cache
+        uses: actions/cache@v4
+        with:
+          path: .cache
+          key: profile-api-cache-${{ github.run_id }}
+          restore-keys: |
+            profile-api-cache-
+
+      - name: Generate assets
+        env:
+          # Raises the API limit from 60/hr to 1000/hr. Without it a full run
+          # (55 repos + up to 30 language calls) would exhaust the budget.
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        run: python3 scripts/generate.py --user Mr-Destroyer --out assets
+
+      # The generator is written to keep last-good output when the API fails, so
+      # this step is the backstop: a run that somehow produced a broken asset
+      # should fail loudly rather than commit it.
+      #
+      # The content check matters more than it looks. "Is it non-empty and
+      # well-formed XML?" cannot tell a real card from a failed one: a stats
+      # card rendered with all-zero data is still 3.9 KB of perfectly valid SVG
+      # full of <text> elements. So assert on the actual values instead — the
+      # repo count and the star count both have to be non-zero, and the snake
+      # has to have placed its full grid.
+      - name: Validate generated SVGs
+        run: |
+          set -e
+          for f in assets/stats.svg assets/languages.svg assets/snake.svg assets/projects.svg; do
+            test -s "$f" || { echo "::error::$f is empty"; exit 1; }
+            python3 -c "import xml.dom.minidom; xml.dom.minidom.parse('$f')" \
+              || { echo "::error::$f is not well-formed XML"; exit 1; }
+            grep -q '<text' "$f" || { echo "::error::$f has no text content"; exit 1; }
+          done
+
+          python3 - <<'PY'
+          import re, sys
+
+          def texts(path):
+              return [t.strip() for t in
+                      re.findall(r'>([^<>]+)</text>', open(path).read()) if t.strip()]
+
+          fail = []
+
+          # stats.svg renders its tile values as the text immediately before
+          # each label. A zero here means the API silently failed.
+          st = texts("assets/stats.svg")
+          for label, floor in (("REPOSITORIES", 1), ("STARS EARNED", 1)):
+              if label in st:
+                  value = int(st[st.index(label) - 1].replace(",", ""))
+                  if value < floor:
+                      fail.append(f"stats.svg: {label} rendered as {value}")
+              else:
+                  fail.append(f"stats.svg: {label} tile missing")
+
+          # snake.svg must place the whole grid — a partial grid means the
+          # date-to-column mapping broke, which it does silently.
+          cells = len(re.findall(r'<title>\d{4}-\d{2}-\d{2}: level \d</title>',
+                                 open("assets/snake.svg").read()))
+          if cells != 371:
+              fail.append(f"snake.svg: {cells} cells placed, expected 371")
+
+          # projects.svg must feature at least one repo.
+          if len(texts("assets/projects.svg")) <= 2:
+              fail.append("projects.svg: no featured repos rendered")
+
+          for f in fail:
+              print(f"::error::{f}")
+          sys.exit(1 if fail else 0)
+          PY
+          echo "assets validated: real values present"
+
+      - name: Commit if changed
+        run: |
+          set -e
+          git config user.name  "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add assets/stats.svg assets/languages.svg assets/snake.svg assets/projects.svg
+          if git diff --cached --quiet; then
+            echo "no change — nothing to commit"
+          else
+            git commit -m "chore: regenerate profile assets [skip ci]"
+            git push
+            echo "committed regenerated assets"
+          fi

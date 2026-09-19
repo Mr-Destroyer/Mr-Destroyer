@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  hero.svg — profile header.
+
+  Replaces glitch-banner.svg + matrix-rain.svg.
+
+  Motion budget: everything arrives once, staggered, then only two slow ambient
+  elements remain (a gradient sweep and a breathing status dot). The asset this
+  replaces ran `flicker 0.15s infinite` across the full frame, which is a rapid
+  full-frame luminance flash — a real photosensitivity risk, and the single most
+  unpolished thing on the old profile. There is no flashing here.
+
+  Techniques used are the ones the probe verified under GitHub's CSP
+  (`default-src 'none'; style-src 'unsafe-inline'; sandbox`):
+    - CSS @keyframes for entrance opacity + translateY
+    - CSS stroke-dashoffset for the rule draw-on
+    - SMIL on gradient x1/x2 for the sweep  (CSS transform on SVG is a no-op)
+  No external fonts (blocked by CSP) and no scripts.
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 880 230" width="100%" role="img" aria-label="Mohammad Zim — offensive security tooling">
+  <defs>
+    <style>
+      text { font-family: ui-monospace, SFMono-Regular, 'SF Mono', Menlo, Consolas, 'Liberation Mono', monospace; }
+      /* Base states are fully visible; the hidden start state and the animation
+         itself live in the media query below. Putting `opacity: 0` here instead
+         would blank the whole header wherever animations do not run. */
+      @keyframes riseIn { from { opacity: 0; transform: translateY(12px); } to { opacity: 1; transform: translateY(0); } }
+      @keyframes draw { from { stroke-dashoffset: 1; } to { stroke-dashoffset: 0; } }
+      @keyframes breathe { 0%,100% { opacity: .55; } 50% { opacity: 1; } }
+      @media (prefers-reduced-motion: no-preference) {
+        .rise { opacity: 0; animation: riseIn .8s cubic-bezier(.2,.7,.3,1) forwards; }
+        .draw { stroke-dashoffset: 1; animation: draw 1.8s ease-out forwards; }
+        .breathe { animation: breathe 5s ease-in-out infinite; }
+      }
+    </style>
+
+    <linearGradient id="sweep" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#00E5A0" stop-opacity="0"/>
+      <stop offset="50%" stop-color="#00E5A0" stop-opacity=".85"/>
+      <stop offset="100%" stop-color="#00E5A0" stop-opacity="0"/>
+      <animate attributeName="x1" values="-0.6;1" dur="6s" repeatCount="indefinite"/>
+      <animate attributeName="x2" values="-0.1;1.5" dur="6s" repeatCount="indefinite"/>
+    </linearGradient>
+
+    <linearGradient id="nameFill" x1="0" y1="0" x2="1" y2="0">
+      <stop offset="0%" stop-color="#E6EDF3"/>
+      <stop offset="100%" stop-color="#9FB3AC"/>
+    </linearGradient>
+  </defs>
+
+  <rect width="880" height="230" fill="#0B0F10"/>
+
+  <!-- corner ticks: a quiet framing device, no animation -->
+  <g stroke="#1E2A2E" stroke-width="1" fill="none">
+    <path d="M16 40 V16 H40"/>
+    <path d="M840 16 H864 V40"/>
+    <path d="M864 190 V214 H840"/>
+    <path d="M40 214 H16 V190"/>
+  </g>
+
+  <!-- eyebrow -->
+  <text class="rise" style="animation-delay:.05s" x="44" y="70" font-size="11"
+        fill="#00E5A0" letter-spacing="3.5">MOHAMMAD ZIM</text>
+
+  <!-- name -->
+  <text class="rise" style="animation-delay:.18s" x="42" y="128" font-size="52"
+        font-weight="700" fill="url(#nameFill)" letter-spacing="1">MR DESTROYER</text>
+
+  <!-- role -->
+  <text class="rise" style="animation-delay:.32s" x="44" y="156" font-size="13"
+        fill="#8B949E" letter-spacing="1.2">offensive security &#183; tooling &#183; automation</text>
+
+  <!-- rule with a slow sweep -->
+  <rect x="44" y="176" width="792" height="1.5" fill="#1E2A2E"/>
+  <rect x="44" y="176" width="792" height="1.5" fill="url(#sweep)"/>
+
+  <!-- bio: his real GitHub bio, unchanged -->
+  <text class="rise" style="animation-delay:.46s" x="44" y="200" font-size="12"
+        fill="#E6EDF3" opacity=".82">you turned the page &#183; i burned the book</text>
+
+  <!-- status. Wording is deliberately the claim he already makes on his own
+       profile ("open to everyone" / collaboration) rather than an invented
+       availability status — the old README's fake PGP key is the cautionary
+       example of stating things that are not true. -->
+  <circle class="breathe" cx="846" cy="196" r="4" fill="#00E5A0"/>
+  <text class="rise" style="animation-delay:.58s" x="836" y="200" font-size="10"
+        fill="#8B949E" text-anchor="end" letter-spacing="1.5">OPEN TO COLLABORATION</text>
+</svg>
